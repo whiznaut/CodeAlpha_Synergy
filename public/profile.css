@@ -1,0 +1,361 @@
+/* Background Wallpaper */
+body {
+  background: url("../assets/main-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Profile Page */
+.profile-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  min-height: 500px;
+}
+
+/* Profile Page Elements */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-picture-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+#profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-username {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.profile-details p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #555;
+}
+
+.follow-btn,
+.edit-profile-btn,
+.logout-btn,
+.go-back-btn {
+  margin: 10px 0;
+}
+
+/* Follow Button */
+.follow-btn {
+  background-color: transparent;
+  color: #45a049;
+  padding: 12px 20px;
+  border: 2px solid #45a049;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 45%;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.follow-btn:hover {
+  background-color: #45a049;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.follow-btn:active {
+  background-color: #388e3c;
+  color: white;
+  transform: translateY(0);
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #45a049;
+  padding: 12px 20px;
+  border: 2px solid #45a049;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #45a049;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.edit-profile-btn:active {
+  background-color: #388e3c;
+  color: white;
+  transform: translateY(0);
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: transparent;
+  color: #f44336;
+  padding: 12px 20px;
+  border: 2px solid #f44336;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #f44336;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.logout-btn:active {
+  background-color: #d32f2f;
+  color: white;
+  transform: translateY(0);
+}
+
+/* Go Back Button */
+.go-back-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  color: #007bff;
+  padding: 12px 20px;
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.go-back-btn:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.go-back-btn:active {
+  background-color: #0056b3;
+  color: white;
+  transform: translateY(0);
+}
+
+/* Update Profile Form */
+.update-profile-form {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.update-profile-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.update-profile-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.update-profile-form input,
+.update-profile-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.update-profile-form textarea {
+  resize: vertical;
+}
+
+/* Update Profile Button */
+.update-profile-form button {
+  background-color: transparent;
+  color: #45a049;
+  padding: 12px 20px;
+  border: 2px solid #4caf50;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.update-profile-form button:hover {
+  background-color: #45a049;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.update-profile-form button:active {
+  background-color: #388e3c;
+  color: white;
+  transform: translateY(0);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+  animation: modalFadeIn 0.5s ease;
+}
+
+.close-btn {
+  color: #333;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -15px;
+  margin-right: -10px;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #ff0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #f1f1f1;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-username {
+    font-size: 28px;
+  }
+
+  .profile-details p,
+  .follow-btn {
+    font-size: 18px;
+  }
+
+  .logout-btn {
+    padding: 14px;
+    font-size: 18px;
+  }
+}

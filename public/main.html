@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1 class="header-title">Synergy - Connect with Nature</h1>
+        <!-- Profile section -->
+        <div class="header-user-info">
+          <a href="profile.html" class="user-profile-link">
+            <img src="" alt="User Icon" class="user-icon" id="user-icon" />
+            <span class="header-username" id="header-username">Username</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <form id="post-form">
+        <h2>Leaf your worries behind and upload your best!</h2>
+        <textarea id="post-caption" placeholder="Write a caption..."></textarea>
+
+        <!-- Container for file upload button -->
+        <div class="file-upload-container">
+          <label for="post-image" class="custom-file-upload">
+            Upload Image
+            <input type="file" id="post-image" accept="image/*" />
+          </label>
+          <img
+            id="post-image-preview"
+            style="display: none"
+            alt="Image Preview"
+          />
+        </div>
+
+        <button type="submit">Post</button>
+      </form>
+
+      <!-- Posts container where posts will be added dynamically -->
+      <div id="posts-container"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Synergy. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

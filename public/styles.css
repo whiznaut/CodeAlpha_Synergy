@@ -1,0 +1,122 @@
+/* Overall page styling */
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-image: url("../assets/main-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+/* Container for the authentication forms */
+#auth-container {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 80%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Floating effect for the form container */
+#auth-container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0.5;
+}
+
+/* Individual forms styling */
+#auth-forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header styling */
+h2 {
+  color: #0d9e67;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Input fields styling */
+input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* Button styling */
+button {
+  background-color: #fff;
+  color: #45a049;
+  padding: 12px 20px;
+  border: 2px solid #45a049;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  color: white;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #388e3c;
+  color: white;
+  transform: translateY(0);
+}
+
+/* Paragraph and link styling */
+p {
+  text-align: center;
+  color: #555;
+}
+
+a {
+  color: #45a049;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #388e3c;
+}

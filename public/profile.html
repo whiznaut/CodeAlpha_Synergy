@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Header content -->
+    </header>
+
+    <main>
+      <!-- Profile Container -->
+      <div class="profile-container">
+        <!-- Profile Header with Picture and Edit Button -->
+        <div class="profile-header">
+          <button id="go-back-btn" class="go-back-btn">&larr; Go Back</button>
+          <div class="profile-picture-container">
+            <img id="profile-picture" src="" alt="Profile Picture" />
+            <span class="edit-icon">&#9998;</span>
+            <!-- Edit icon -->
+          </div>
+          <input type="file" id="profile-picture-input" style="display: none" />
+          <h1 class="profile-username" id="profile-username">Username</h1>
+          <button id="edit-profile-btn" class="edit-profile-btn">
+            Edit Profile
+          </button>
+        </div>
+
+        <!-- Profile Details Section -->
+        <div class="profile-details">
+          <div class="profile-buttons">
+            <button id="followers-btn" class="follow-btn">
+              <strong>Followers</strong> <span id="profile-followers">0</span>
+            </button>
+            <button id="following-btn" class="follow-btn">
+              <strong>Following</strong> <span id="profile-following">0</span>
+            </button>
+          </div>
+          <p>
+            <strong>Bio:</strong> <span id="profile-bio">No bio available</span>
+          </p>
+          <p>
+            <strong>Post Count:</strong> <span id="profile-posts-count">0</span>
+          </p>
+        </div>
+
+        <!-- Log Out Button -->
+        <button id="logout-btn" class="logout-btn">Log Out</button>
+      </div>
+
+      <!-- Update Profile Form -->
+      <form id="update-profile-form" class="update-profile-form">
+        <h2>Update Profile</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea>
+        <button type="submit">Update Profile</button>
+      </form>
+
+      <!-- Modal for Followers -->
+      <div id="followers-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="close-followers-modal">&times;</span>
+          <h2>Followers</h2>
+          <ul id="followers-list"></ul>
+        </div>
+      </div>
+
+      <!-- Modal for Following -->
+      <div id="following-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="close-following-modal">&times;</span>
+          <h2>Following</h2>
+          <ul id="following-list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
